@@ -1,6 +1,6 @@
 #! /usr/bin/env python
 
-## Filter a posteriori
+## Filter a posteriori, D. buzzatii
 ## D.N. De Panis
 
 import sys
