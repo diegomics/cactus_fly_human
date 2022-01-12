@@ -1,7 +1,7 @@
 #! /usr/bin/env python
 
-## Filter a posteriori intra species
-## De Panis 2017
+## Filter a posteriori
+## D.N. De Panis
 
 import sys
 import numpy
@@ -20,6 +20,7 @@ for line in file_in:
 #    if av <= 1:
 #    if av <= 0.75:
     if av <= 0.5:
+#    if av <= 0.25:
         print(col[0] + "\t" + "too low")
         file_out_prob_noise.write(line)
         continue
@@ -32,6 +33,8 @@ for line in file_in:
 #    elif av > 8000 and ((dev*100)/av) > 40:
     elif av > 5000 and ((dev*100)/av) > 50:
 #    elif av > 6000 and ((dev*100)/av) > 60:
+#    elif av > 6000 and ((dev*100)/av) > 70:
+#    elif av > 6000 and ((dev*100)/av) > 75:
 #    elif av > 10000 and ((dev*100)/av) > 100:
         print(col[0] + "\t" + "too high")
         file_out_prob_noise.write(line)
