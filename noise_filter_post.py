@@ -6,8 +6,7 @@
 import sys
 import numpy
 
-
-file_in = open(sys.argv[1], 'r')
+file_in = open(sys.argv[1], 'r') # file_in is a table produced by filtering Dbuz.genes_fpkm.table with all DEGs detected by DEG_analysis.R
 file_out_filtered = open(sys.argv[2], 'w')
 file_out_prob_noise = open(sys.argv[3], 'w')
 
